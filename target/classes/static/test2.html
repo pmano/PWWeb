@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- bootstap-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">   
+  	 <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
+   <!-- bootstrap end-->
+    <title>PunditWeb2 | Connect with your fellow investors!</title>
+
+		
+  </head>
+<body ng-app="tapp">
+  
+  <div   ng-controller="testSymbolsCtrl1">
+     <h2>Total Symbol count is : {{record2}}</h2>
+    
+   </div>
+    
+   <div ng-controller="testSymbolsCtrl2">
+     <h1>Displaying Symbols from MySql</h1>
+     <ul>
+       <li ng-repeat="x in records">
+       	 {{x.symbol}}, {{x.name}},{{x.sector}},{{x.industry}}
+       </li>
+     </ul>
+      <p>
+        ERROR IS : {{record1}}
+    </p>
+   </div>
+  
+  
+   <!-- bower:js -->
+	<script src="bower_components/angular/angular.min.js"></script>
+  	<script src="bower_components/angular-resource/angular-resource.js"></script>
+  	<script src="bower_components/ng-module/ng-module.js"></script>
+   <!-- endbower -->
+  
+   <!-- custom Angulajs --> 
+   <script src="scripts/controllers/testSymbolsCtrl.js"></script>
+  
+</body>
+</html>

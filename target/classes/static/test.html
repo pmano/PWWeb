@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- bootstap-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">   
+  	 <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
+   <!-- bootstrap end-->
+    <title>PunditWeb | Connect with your fellow investors!</title>
+
+		
+  </head>
+<body>
+  
+   <!--<div ng-module="testApp" ng-controller="testCtrl">
+    <p>
+      first Name: <input type="text" ng-model="fname"> 
+    </p>
+      <p>
+      last Name: <input type="text" ng-model="lname"> 
+    </p>
+    <p>
+        Hello: {{fullName() | uppercase}}
+    </p>
+  </div>
+  
+   <div ng-module="app2" ng-controller="testNamesCtrl">
+     <h5>Diplaying Countries via RESTAPI</h5>
+     <ul>
+        <li ng-repeat="x in record">
+       	{{ x.Name}},{{x.Country}}
+       </li>
+     </ul>
+   </div>-->
+  
+ <div ng-app="testApp" ng-controller="testCtrl">
+    <p>
+      first Name: <input type="text" ng-model="greeting.fname"> 
+    </p>
+      <p>
+      last Name: <input type="text" ng-model="greeting.lname"> 
+    </p>
+    <p>
+        Hello: {{greeting.fullName | uppercase}}
+    </p>
+  </div>
+  
+   <div id="app2" ng-controller="testNamesCtrl">
+     <h5>Displaying Currency rates of Countries via RESTAPI</h5>
+     <ul>
+       <li ng-repeat="x in record">
+       	 {{x.resource.fields.name}}, {{x.resource.fields.symbol}},{{x.resource.fields.price}},{{x.resource.fields.utctime}}
+       </li>
+     </ul>
+      <p>
+        ERROR IS : {{record1}}
+    </p>
+   </div>
+  
+  <!--<div ng-app="testApp">
+    <div  ng-controller="testCtrl">
+      <p>
+        first Name: <input type="text" ng-model="fname"> 
+      </p>
+        <p>
+        last Name: <input type="text" ng-model="lname"> 
+      </p>
+      <p>
+          Hello: {{fullName() | uppercase}}
+      </p>
+    </div>
+
+     <div ng-controller="testNamesCtrl">
+       <h5>Diplaying Countries via RESTAPI</h5>
+       <ul>
+          <li ng-repeat="x in record">
+           {{ x.Name}},{{x.Country | uppercase}}
+         </li>
+       </ul>
+     </div>
+  </div>-->
+  
+   <!-- bower:js -->
+	<script src="bower_components/angular/angular.min.js"></script>
+  	<script src="bower_components/angular-resource/angular-resource.js"></script>
+  	<script src="bower_components/ng-module/ng-module.js"></script>
+   <!-- endbower -->
+  
+   <!-- custom Angulajs --> 
+    <!--<script src="scripts/controllers/testuni.js"></script>-->
+	 <script src="scripts/controllers/testCtrl.js"></script>
+   <script src="scripts/controllers/testNamesCtrl.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+    background-color: #e7e7e7;
+}
+@media(max-width: 500px){
+	.container{width:500px !important;}
+}
+
+.myform-header {
+    background: #292c2f;
+    color:#ffffff;
+}
+.myform-headerSearchGroup{
+		margin: 1% 0 1% 0;
+}
+.myform-headerSearchButton{
+    background:#545454;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+.myform-headerSearchText{
+	background:#545454;
+	border:none;
+	font-style:italic;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+.myform-secondHeader{
+	background-color: #525252;
+	border:none;
+	color:white;
+}
+.myform-BuzzHeader{
+	background-color:#ee3990;
+	border:none;
+	color:white;
+}
+.myform-MarketHeader{
+	background-color:#4651c3;
+	border:none;
+	color:white;
+}
+.myform-TradeHeader{
+	background-color:#60d14f;
+	border:none;
+	color:white;
+}
+.myform-glyphicon-user {
+   color: #606060;
+   font-size:600%;
+   margin: 10% 0% 0% 45%;
+   background-color:#8a8a8a;
+   border-radius: 5% 5% 5% 5%;
+   padding: 10% 10% 0% 10%;
+   border-style: solid;
+   border-width:2px;
+   border-color:#737373;
+
+}
+.myform-marketTopNavbar{
+	margin: 1% 0% 0% 0%;
+}
+.myform-filterHead{
+	margin: 10% 0% 0% 45%;
+	padding-top:40%;
+	width:135%;
+}
+.myform-filterBox{
+	margin: 10% 0% 0% 45%;
+	width:135%;
+}
+.myform-filterInside{
+	width:135%;
+	
+	border-left:solid;
+	border-right:solid;
+	border-width:2px;
+    border-color:#e3e3e3;
+}
+.myform-filterInsideTop{
+	border-top:solid;
+	border-width:2px;
+    border-color:#e3e3e3;
+}
+.myform-filterInsideBottom{
+	border-bottom:solid;
+	border-width:2px;
+    border-color:#e3e3e3;
+}
+
+

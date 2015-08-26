@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="UTF-8">
+	<title>PunditWeb | Connect to your fellow investors!</title>
+	
+	<!-- Bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/bower_components/bootstrap-css-only/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/bower_components/bootstrap-css-only/css/bootstrap-theme.min.css" />
+	<!-- PollyFill -->
+ 	<script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+ 	
+ 	<link rel="import" href="headerFrame.html">
+ 	<link rel="import" href="bodyFrame.html">
+ 	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- import headers from headerFrame.html
+	<script>
+ 		window.addEventListener('HTMLImportsLoaded', function() {
+        var link = document.querySelector('link[rel=import]');
+        var header = link.import.querySelector('#myform-header');
+        var secondHeader = link.import.querySelector('#myform-secondHeader');
+      	document.body.appendChild(document.importNode(header, true));
+        document.body.appendChild(document.importNode(secondHeader, true));
+      });
+    </script>-->
+    <script>
+ 		window.addEventListener('HTMLImportsLoaded', function() {
+        var link = document.querySelector('link[rel=import]');
+       	var bodyFrameTop = link.import.querySelector('#myform-bodyFrameTop');
+        var bodyFrame2 = link.import.querySelector('#myform-bodyFrame2');
+        document.body.appendChild(document.importNode(bodyFrameTop, true));
+        document.body.appendChild(document.importNode(bodyFrame2, true));
+      });
+    </script>
+
+    <!-- Bootstrap -->
+	<script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="./bower_components/lodash/dist/lodash.min.js"></script>
+</body>
+</html>

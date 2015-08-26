@@ -1,0 +1,43 @@
+.myform-header {
+    background: #292c2f;
+    color:#ffffff;
+}
+.myform-headerSearchGroup{
+		margin: 1% 0 1% 0;
+}
+.myform-headerSearchButton{
+    background:#545454;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+.myform-headerSearchText{
+	background:#545454;
+	border:none;
+	font-style:italic;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+.myform-secondHeader{
+	background-color: #525252;
+	border:none;
+	color:white;
+}
+.myform-BuzzHeader{
+	background-color:#ee3990;
+	border:none;
+	color:white;
+}
+.myform-MarketHeader{
+	background-color:#4651c3;
+	border:none;
+	color:white;
+}
+.myform-TradeHeader{
+	background-color:#60d14f;
+	border:none;
+	color:white;
+}
+
+
